@@ -28,7 +28,8 @@ def Menu():
         print("="*30)
         print("[1]Cadastrar")
         print("[2]Listar")
-        print("[3]Sair")
+        print("[3]Deletar")
+        print("[4]Sair")
         print("="*30)
         op = tryNumerico("Opção: ")
         return op
@@ -45,8 +46,11 @@ def verify():
             print("Pressione enter...")
             input()
         if opc == 3:
-            sleep(0.6)
+            deletarCad()
+        if opc == 4:
             print("Saindo...")
+            sleep(0.6)
             break
-        if opc > 3:
+        if opc > 4:
             print("Opção nao existe.")
+        
